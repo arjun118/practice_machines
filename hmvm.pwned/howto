@@ -1,0 +1,17 @@
+you get 80,22 are open
+
+do directory busting , you will get three paths
+
+/nothing
+/hidden_text and something
+
+go to /hidden_text you have now a secret.dic which has some possible paths, get them onto your machine
+and do a dir bust using this list
+
+one of them is legit
+
+open that page, check source code, get ftp pass and get two files, 
+login as some user
+upgrade to another user and then try priv esc
+
+note: execute command id

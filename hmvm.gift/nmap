@@ -1,0 +1,93 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2023-12-22 23:21 IST
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 23:21
+Completed NSE at 23:21, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 23:21
+Completed NSE at 23:21, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 23:21
+Completed NSE at 23:21, 0.00s elapsed
+Initiating ARP Ping Scan at 23:21
+Scanning 10.0.2.6 [1 port]
+Completed ARP Ping Scan at 23:21, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 23:21
+Completed Parallel DNS resolution of 1 host. at 23:21, 0.02s elapsed
+Initiating SYN Stealth Scan at 23:21
+Scanning 10.0.2.6 [65535 ports]
+Discovered open port 22/tcp on 10.0.2.6
+Discovered open port 80/tcp on 10.0.2.6
+Completed SYN Stealth Scan at 23:21, 18.40s elapsed (65535 total ports)
+Initiating Service scan at 23:21
+Scanning 2 services on 10.0.2.6
+Completed Service scan at 23:21, 6.04s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against 10.0.2.6
+NSE: Script scanning 10.0.2.6.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 23:21
+Completed NSE at 23:21, 0.30s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 23:21
+Completed NSE at 23:21, 0.01s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 23:21
+Completed NSE at 23:21, 0.00s elapsed
+Nmap scan report for 10.0.2.6
+Host is up, received arp-response (0.00068s latency).
+Scanned at 2023-12-22 23:21:25 IST for 27s
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 64 OpenSSH 8.3 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 2c:1b:36:27:e5:4c:52:7b:3e:10:94:41:39:ef:b2:95 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCwvhffyA9Z9cqVhVe0GuixD3HU4XTTTf1CQnN9PbBFckBHxypueBuI9N0WkAOvZLGKI9JkjxzxgQ5vIdzr83IoyrbUBw/nFLwRzsVhBM+JMUqSZ9OHMhg8qQpFIAcdNprgB40DgER+hMrU+yUAqwbNISQC/aE+DCdHNjNqFw6Pf2/+7bp8CbntJAxdh4DtHZAmneKy/2JGKzpJcDxU2L8B5pY9uvajkKVSDXVFe1bJZV9ZirBalgYGgke4sTz5kpIeT3CyEefJie6r7wloIH4CiWtyXDsYGMt5mD2UBCa4GDQaJO5U9F0qjYFa8YdVCOTWdyQvOlFOgqydvAl0LRf6tZKNqVOb/peNf9K8Ucrg4n+IevaGmivhyGXnwbuCuHN1QH/9dzbNbnZwXn2GYtwYdjBy6AmHRX9Jcsdorj4b/r+eCEPvFIm4ESc7qsn4ShtQr9R8fTgrWArJkfLKhr4KdwMZoifAbjrR/G/lj524dS20mbbVLdhjy/8rH/42dN0=
+|   256 93:c1:1e:32:24:0e:34:d9:02:0e:ff:c3:9c:59:9b:dd (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEK4YVSVfGAFEwIJqSel1n33seZLyN+AgGU4rUu5Xrf2LnzQmntddLtLtc1Soqu6SpOi/A6vefQzI+a867uJ3Tw=
+|   256 81:ab:36:ec:b1:2b:5c:d2:86:55:12:0c:51:00:27:d7 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID5tIogpq9Eky8MaFF10Cq48d+nTRmXk0OwWl8J8CNIq
+80/tcp open  http    syn-ack ttl 64 nginx
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: Site doesn't have a title (text/html).
+MAC Address: 08:00:27:1D:DB:16 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+TCP/IP fingerprint:
+OS:SCAN(V=7.94SVN%E=4%D=12/22%OT=22%CT=1%CU=33265%PV=Y%DS=1%DC=D%G=Y%M=0800
+OS:27%TM=6585CCB8%P=x86_64-pc-linux-gnu)SEQ(SP=108%GCD=1%ISR=10C%TI=Z%CI=Z%
+OS:II=I%TS=A)OPS(O1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11N
+OS:W7%O5=M5B4ST11NW7%O6=M5B4ST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE8
+OS:8%W6=FE88)ECN(R=Y%DF=Y%T=40%W=FAF0%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40
+OS:%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=
+OS:%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%
+OS:W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=
+OS:)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%
+OS:DFI=N%T=40%CD=S)
+
+Uptime guess: 4.214 days (since Mon Dec 18 18:13:26 2023)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=264 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.68 ms 10.0.2.6
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 23:21
+Completed NSE at 23:21, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 23:21
+Completed NSE at 23:21, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 23:21
+Completed NSE at 23:21, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 26.68 seconds
+           Raw packets sent: 65558 (2.885MB) | Rcvd: 65550 (2.623MB)
